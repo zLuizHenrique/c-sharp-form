@@ -53,8 +53,10 @@
             this.rdbMasculino = new System.Windows.Forms.RadioButton();
             this.rdbFeminino = new System.Windows.Forms.RadioButton();
             this.label11 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dtpNascimento = new System.Windows.Forms.DateTimePicker();
             this.mtbTelefone = new System.Windows.Forms.MaskedTextBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.mtxtCPF = new System.Windows.Forms.MaskedTextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -843,7 +845,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(16, 305);
+            this.label9.Location = new System.Drawing.Point(16, 359);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(73, 13);
             this.label9.TabIndex = 20;
@@ -851,7 +853,7 @@
             // 
             // txtobservacoes
             // 
-            this.txtobservacoes.Location = new System.Drawing.Point(107, 302);
+            this.txtobservacoes.Location = new System.Drawing.Point(107, 359);
             this.txtobservacoes.Multiline = true;
             this.txtobservacoes.Name = "txtobservacoes";
             this.txtobservacoes.Size = new System.Drawing.Size(330, 114);
@@ -864,7 +866,7 @@
             // 
             // btnsalvar
             // 
-            this.btnsalvar.Location = new System.Drawing.Point(299, 422);
+            this.btnsalvar.Location = new System.Drawing.Point(299, 479);
             this.btnsalvar.Name = "btnsalvar";
             this.btnsalvar.Size = new System.Drawing.Size(75, 23);
             this.btnsalvar.TabIndex = 24;
@@ -874,7 +876,7 @@
             // 
             // btnlimpar
             // 
-            this.btnlimpar.Location = new System.Drawing.Point(155, 422);
+            this.btnlimpar.Location = new System.Drawing.Point(155, 479);
             this.btnlimpar.Name = "btnlimpar";
             this.btnlimpar.Size = new System.Drawing.Size(75, 23);
             this.btnlimpar.TabIndex = 25;
@@ -908,7 +910,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(54, 258);
+            this.label10.Location = new System.Drawing.Point(55, 265);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(34, 13);
             this.label10.TabIndex = 27;
@@ -917,7 +919,7 @@
             // rdbMasculino
             // 
             this.rdbMasculino.AutoSize = true;
-            this.rdbMasculino.Location = new System.Drawing.Point(109, 258);
+            this.rdbMasculino.Location = new System.Drawing.Point(109, 252);
             this.rdbMasculino.Name = "rdbMasculino";
             this.rdbMasculino.Size = new System.Drawing.Size(73, 17);
             this.rdbMasculino.TabIndex = 28;
@@ -928,7 +930,7 @@
             // rdbFeminino
             // 
             this.rdbFeminino.AutoSize = true;
-            this.rdbFeminino.Location = new System.Drawing.Point(188, 258);
+            this.rdbFeminino.Location = new System.Drawing.Point(109, 275);
             this.rdbFeminino.Name = "rdbFeminino";
             this.rdbFeminino.Size = new System.Drawing.Size(67, 17);
             this.rdbFeminino.TabIndex = 29;
@@ -945,13 +947,12 @@
             this.label11.TabIndex = 30;
             this.label11.Text = "Nascimento:";
             // 
-            // dateTimePicker1
+            // dtpNascimento
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(299, 212);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(122, 20);
-            this.dateTimePicker1.TabIndex = 32;
-            this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
+            this.dtpNascimento.Location = new System.Drawing.Point(299, 212);
+            this.dtpNascimento.Name = "dtpNascimento";
+            this.dtpNascimento.Size = new System.Drawing.Size(122, 20);
+            this.dtpNascimento.TabIndex = 32;
             // 
             // mtbTelefone
             // 
@@ -961,14 +962,33 @@
             this.mtbTelefone.Size = new System.Drawing.Size(121, 20);
             this.mtbTelefone.TabIndex = 33;
             // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(245, 248);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(30, 13);
+            this.label12.TabIndex = 34;
+            this.label12.Text = "CPF:";
+            // 
+            // mtxtCPF
+            // 
+            this.mtxtCPF.Location = new System.Drawing.Point(299, 245);
+            this.mtxtCPF.Mask = "000.000.000.00";
+            this.mtxtCPF.Name = "mtxtCPF";
+            this.mtxtCPF.Size = new System.Drawing.Size(121, 20);
+            this.mtxtCPF.TabIndex = 35;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Highlight;
             this.ClientSize = new System.Drawing.Size(583, 528);
+            this.Controls.Add(this.mtxtCPF);
+            this.Controls.Add(this.label12);
             this.Controls.Add(this.mtbTelefone);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.dtpNascimento);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.rdbFeminino);
             this.Controls.Add(this.rdbMasculino);
@@ -1026,8 +1046,10 @@
         private System.Windows.Forms.RadioButton rdbMasculino;
         private System.Windows.Forms.RadioButton rdbFeminino;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dtpNascimento;
         private System.Windows.Forms.MaskedTextBox mtbTelefone;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.MaskedTextBox mtxtCPF;
     }
 }
 

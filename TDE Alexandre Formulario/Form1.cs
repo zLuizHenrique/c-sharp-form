@@ -19,8 +19,8 @@ namespace TDE_Alexandre_Formulario
         string sexo;
         private void Form1_Load(object sender, EventArgs e)
         {
-            dateTimePicker1.Format = DateTimePickerFormat.Custom;
-            dateTimePicker1.CustomFormat = "dd/MM/yyyy";
+            dtpNascimento.Format = DateTimePickerFormat.Custom;
+            dtpNascimento.CustomFormat = "dd/MM/yyyy";
         }
 
         private void btnlimpar_Click(object sender, EventArgs e)
@@ -33,7 +33,14 @@ namespace TDE_Alexandre_Formulario
             string telefone = mtbTelefone.Text = "";
             string Cidade = cmbCidade.Text = "";
             string Estado = cmbEstado.Text = "";
-            string Obversações = txtobservacoes.Text = "";
+            rdbMasculino.Checked = false;
+            rdbFeminino.Checked = false;
+            cmbCidade.SelectedIndex = - 1;
+            cmbEstado.SelectedIndex = - 1;
+            cmbEstadoCivil.SelectedIndex = - 1;
+            dtpNascimento.Text = "03/04/2020";
+            string CPF = mtxtCPF.Text = "";
+            string observacao = txtobservacoes.Text = "";
 
             MessageBox.Show("Formulario Limpo.");
 
@@ -52,6 +59,8 @@ namespace TDE_Alexandre_Formulario
             string telefone = mtbTelefone.Text;
             string cidade = cmbCidade.GetItemText(cmbCidade.SelectedItem);
             string estado = cmbEstado.GetItemText(cmbEstado.SelectedItem);
+            string Nascimento = dtpNascimento.Text;
+            string CPF = mtxtCPF.Text;
             string estadocivil = cmbEstadoCivil.GetItemText(cmbEstadoCivil.SelectedItem);
             string observação = txtobservacoes.Text;
 
@@ -74,24 +83,10 @@ namespace TDE_Alexandre_Formulario
                 " Estado: " + estado + "\n" +
                 " Estado Civil: " + estadocivil + "\n" +
                 " Sexo: " + sexo + "\n" +
+                " CPF: " + CPF + "\n" + 
                 " Observação: " + observação + "\n" ); 
 
 
-
-        }
-
-        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dateTimePicker2_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void mtbNascimento_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
-        {
 
         }
     }
