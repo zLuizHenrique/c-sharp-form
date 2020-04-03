@@ -16,7 +16,7 @@ namespace TDE_Alexandre_Formulario
         {
             InitializeComponent();
         }
-
+        string sexo;
         private void Form1_Load(object sender, EventArgs e)
         {
 
@@ -47,12 +47,21 @@ namespace TDE_Alexandre_Formulario
             string nome = txtnome.Text;
             string endereço = txtEndereco.Text;
             string bairro = txtBairro.Text;
-            string estadocivil = cmbEstadoCivil.GetItemText(cmbEstadoCivil.SelectedItem);
             string CEP = txtCEP.Text;
             string telefone = txtTelefone.Text;
             string cidade = cmbCidade.GetItemText(cmbCidade.SelectedItem);
             string estado = cmbEstado.GetItemText(cmbEstado.SelectedItem);
+            string estadocivil = cmbEstadoCivil.GetItemText(cmbEstadoCivil.SelectedItem);
             string observação = txtobservacoes.Text;
+
+            if (rdbMasculino.Checked)
+            {
+                sexo = "Masculino ";
+            }
+            else if (rdbFeminino.Checked)
+            {
+                sexo = "Feminino ";
+            }
 
             MessageBox.Show( 
                 " Nome: " + nome + "\n" +
@@ -63,6 +72,7 @@ namespace TDE_Alexandre_Formulario
                 " Cidade: " + cidade + "\n" + 
                 " Estado: " + estado + "\n" +
                 " Estado Civil: " + estadocivil + "\n" +
+                " Sexo: " + sexo + "\n" +
                 " Observação: " + observação + "\n" ); 
 
 

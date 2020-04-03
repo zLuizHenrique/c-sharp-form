@@ -50,6 +50,9 @@
             this.btnlimpar = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.cmbEstadoCivil = new System.Windows.Forms.ComboBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.rdbMasculino = new System.Windows.Forms.RadioButton();
+            this.rdbFeminino = new System.Windows.Forms.RadioButton();
             this.SuspendLayout();
             // 
             // label1
@@ -845,7 +848,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(15, 260);
+            this.label9.Location = new System.Drawing.Point(16, 305);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(73, 13);
             this.label9.TabIndex = 20;
@@ -853,11 +856,11 @@
             // 
             // txtobservacoes
             // 
-            this.txtobservacoes.Location = new System.Drawing.Point(107, 260);
+            this.txtobservacoes.Location = new System.Drawing.Point(107, 302);
             this.txtobservacoes.Multiline = true;
             this.txtobservacoes.Name = "txtobservacoes";
             this.txtobservacoes.Size = new System.Drawing.Size(330, 114);
-            this.txtobservacoes.TabIndex = 8;
+            this.txtobservacoes.TabIndex = 9;
             // 
             // contextMenuStrip1
             // 
@@ -866,7 +869,7 @@
             // 
             // btnsalvar
             // 
-            this.btnsalvar.Location = new System.Drawing.Point(299, 392);
+            this.btnsalvar.Location = new System.Drawing.Point(299, 422);
             this.btnsalvar.Name = "btnsalvar";
             this.btnsalvar.Size = new System.Drawing.Size(75, 23);
             this.btnsalvar.TabIndex = 24;
@@ -876,7 +879,7 @@
             // 
             // btnlimpar
             // 
-            this.btnlimpar.Location = new System.Drawing.Point(154, 392);
+            this.btnlimpar.Location = new System.Drawing.Point(155, 422);
             this.btnlimpar.Name = "btnlimpar";
             this.btnlimpar.Size = new System.Drawing.Size(75, 23);
             this.btnlimpar.TabIndex = 25;
@@ -907,12 +910,46 @@
             this.cmbEstadoCivil.Size = new System.Drawing.Size(121, 21);
             this.cmbEstadoCivil.TabIndex = 7;
             // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(54, 258);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(34, 13);
+            this.label10.TabIndex = 27;
+            this.label10.Text = "Sexo:";
+            // 
+            // rdbMasculino
+            // 
+            this.rdbMasculino.AutoSize = true;
+            this.rdbMasculino.Location = new System.Drawing.Point(109, 258);
+            this.rdbMasculino.Name = "rdbMasculino";
+            this.rdbMasculino.Size = new System.Drawing.Size(73, 17);
+            this.rdbMasculino.TabIndex = 28;
+            this.rdbMasculino.TabStop = true;
+            this.rdbMasculino.Text = "Masculino";
+            this.rdbMasculino.UseVisualStyleBackColor = true;
+            // 
+            // rdbFeminino
+            // 
+            this.rdbFeminino.AutoSize = true;
+            this.rdbFeminino.Location = new System.Drawing.Point(203, 258);
+            this.rdbFeminino.Name = "rdbFeminino";
+            this.rdbFeminino.Size = new System.Drawing.Size(67, 17);
+            this.rdbFeminino.TabIndex = 29;
+            this.rdbFeminino.TabStop = true;
+            this.rdbFeminino.Text = "Feminino";
+            this.rdbFeminino.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Highlight;
-            this.ClientSize = new System.Drawing.Size(583, 450);
+            this.ClientSize = new System.Drawing.Size(583, 528);
+            this.Controls.Add(this.rdbFeminino);
+            this.Controls.Add(this.rdbMasculino);
+            this.Controls.Add(this.label10);
             this.Controls.Add(this.cmbEstadoCivil);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.btnlimpar);
@@ -964,6 +1001,9 @@
         private System.Windows.Forms.Button btnlimpar;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.ComboBox cmbEstadoCivil;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.RadioButton rdbMasculino;
+        private System.Windows.Forms.RadioButton rdbFeminino;
     }
 }
 
