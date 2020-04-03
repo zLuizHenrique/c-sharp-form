@@ -19,7 +19,8 @@ namespace TDE_Alexandre_Formulario
         string sexo;
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            dateTimePicker1.Format = DateTimePickerFormat.Custom;
+            dateTimePicker1.CustomFormat = "dd/MM/yyyy";
         }
 
         private void btnlimpar_Click(object sender, EventArgs e)
@@ -29,7 +30,7 @@ namespace TDE_Alexandre_Formulario
             string Bairro = txtBairro.Text = "";
             string EstadoCivil = cmbEstadoCivil.Text = "";
             string CEP = txtCEP.Text = "";
-            string telefone = txtTelefone.Text = "";
+            string telefone = mtbTelefone.Text = "";
             string Cidade = cmbCidade.Text = "";
             string Estado = cmbEstado.Text = "";
             string Obversações = txtobservacoes.Text = "";
@@ -48,7 +49,7 @@ namespace TDE_Alexandre_Formulario
             string endereço = txtEndereco.Text;
             string bairro = txtBairro.Text;
             string CEP = txtCEP.Text;
-            string telefone = txtTelefone.Text;
+            string telefone = mtbTelefone.Text;
             string cidade = cmbCidade.GetItemText(cmbCidade.SelectedItem);
             string estado = cmbEstado.GetItemText(cmbEstado.SelectedItem);
             string estadocivil = cmbEstadoCivil.GetItemText(cmbEstadoCivil.SelectedItem);
@@ -76,6 +77,21 @@ namespace TDE_Alexandre_Formulario
                 " Observação: " + observação + "\n" ); 
 
 
+
+        }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dateTimePicker2_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void mtbNascimento_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
 
         }
     }

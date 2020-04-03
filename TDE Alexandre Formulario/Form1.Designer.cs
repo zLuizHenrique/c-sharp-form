@@ -41,7 +41,6 @@
             this.txtBairro = new System.Windows.Forms.TextBox();
             this.txtCEP = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.txtTelefone = new System.Windows.Forms.TextBox();
             this.cmbEstado = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
             this.txtobservacoes = new System.Windows.Forms.TextBox();
@@ -53,6 +52,9 @@
             this.label10 = new System.Windows.Forms.Label();
             this.rdbMasculino = new System.Windows.Forms.RadioButton();
             this.rdbFeminino = new System.Windows.Forms.RadioButton();
+            this.label11 = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.mtbTelefone = new System.Windows.Forms.MaskedTextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -768,21 +770,21 @@
             // 
             this.txtnome.Location = new System.Drawing.Point(107, 36);
             this.txtnome.Name = "txtnome";
-            this.txtnome.Size = new System.Drawing.Size(347, 20);
+            this.txtnome.Size = new System.Drawing.Size(330, 20);
             this.txtnome.TabIndex = 0;
             // 
             // txtEndereco
             // 
             this.txtEndereco.Location = new System.Drawing.Point(107, 73);
             this.txtEndereco.Name = "txtEndereco";
-            this.txtEndereco.Size = new System.Drawing.Size(347, 20);
+            this.txtEndereco.Size = new System.Drawing.Size(330, 20);
             this.txtEndereco.TabIndex = 1;
             // 
             // txtBairro
             // 
             this.txtBairro.Location = new System.Drawing.Point(107, 108);
             this.txtBairro.Name = "txtBairro";
-            this.txtBairro.Size = new System.Drawing.Size(347, 20);
+            this.txtBairro.Size = new System.Drawing.Size(330, 20);
             this.txtBairro.TabIndex = 2;
             // 
             // txtCEP
@@ -800,13 +802,6 @@
             this.label8.Size = new System.Drawing.Size(52, 13);
             this.label8.TabIndex = 17;
             this.label8.Text = "Telefone:";
-            // 
-            // txtTelefone
-            // 
-            this.txtTelefone.Location = new System.Drawing.Point(299, 147);
-            this.txtTelefone.Name = "txtTelefone";
-            this.txtTelefone.Size = new System.Drawing.Size(122, 20);
-            this.txtTelefone.TabIndex = 4;
             // 
             // cmbEstado
             // 
@@ -933,7 +928,7 @@
             // rdbFeminino
             // 
             this.rdbFeminino.AutoSize = true;
-            this.rdbFeminino.Location = new System.Drawing.Point(203, 258);
+            this.rdbFeminino.Location = new System.Drawing.Point(188, 258);
             this.rdbFeminino.Name = "rdbFeminino";
             this.rdbFeminino.Size = new System.Drawing.Size(67, 17);
             this.rdbFeminino.TabIndex = 29;
@@ -941,12 +936,40 @@
             this.rdbFeminino.Text = "Feminino";
             this.rdbFeminino.UseVisualStyleBackColor = true;
             // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(236, 211);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(66, 13);
+            this.label11.TabIndex = 30;
+            this.label11.Text = "Nascimento:";
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(299, 212);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(122, 20);
+            this.dateTimePicker1.TabIndex = 32;
+            this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
+            // 
+            // mtbTelefone
+            // 
+            this.mtbTelefone.Location = new System.Drawing.Point(299, 151);
+            this.mtbTelefone.Mask = "(00) 00000-0000";
+            this.mtbTelefone.Name = "mtbTelefone";
+            this.mtbTelefone.Size = new System.Drawing.Size(121, 20);
+            this.mtbTelefone.TabIndex = 33;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Highlight;
             this.ClientSize = new System.Drawing.Size(583, 528);
+            this.Controls.Add(this.mtbTelefone);
+            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.label11);
             this.Controls.Add(this.rdbFeminino);
             this.Controls.Add(this.rdbMasculino);
             this.Controls.Add(this.label10);
@@ -957,7 +980,6 @@
             this.Controls.Add(this.txtobservacoes);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.cmbEstado);
-            this.Controls.Add(this.txtTelefone);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.txtCEP);
             this.Controls.Add(this.txtBairro);
@@ -992,7 +1014,6 @@
         private System.Windows.Forms.TextBox txtBairro;
         private System.Windows.Forms.TextBox txtCEP;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox txtTelefone;
         private System.Windows.Forms.ComboBox cmbEstado;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox txtobservacoes;
@@ -1004,6 +1025,9 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.RadioButton rdbMasculino;
         private System.Windows.Forms.RadioButton rdbFeminino;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.MaskedTextBox mtbTelefone;
     }
 }
 
