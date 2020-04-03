@@ -22,52 +22,12 @@ namespace TDE_Alexandre_Formulario
 
         }
 
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtcodigo_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label7_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label9_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void cmbEstado_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtobservacoes_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnlimpar_Click(object sender, EventArgs e)
         {
             string nome = txtnome.Text = "";
-            string código = txtcodigo.Text = "";
             string endereço = txtEndereco.Text = "";
             string Bairro = txtBairro.Text = "";
+            string EstadoCivil = cmbEstadoCivil.Text = "";
             string CEP = txtCEP.Text = "";
             string telefone = txtTelefone.Text = "";
             string Cidade = cmbCidade.Text = "";
@@ -84,32 +44,28 @@ namespace TDE_Alexandre_Formulario
 
         private void btnsalvar_Click(object sender, EventArgs e)
         {
-            String codigo = txtcodigo.Text;
             string nome = txtnome.Text;
             string endereço = txtEndereco.Text;
             string bairro = txtBairro.Text;
+            string estadocivil = cmbEstadoCivil.GetItemText(cmbEstadoCivil.SelectedItem);
             string CEP = txtCEP.Text;
             string telefone = txtTelefone.Text;
             string cidade = cmbCidade.GetItemText(cmbCidade.SelectedItem);
             string estado = cmbEstado.GetItemText(cmbEstado.SelectedItem);
             string observação = txtobservacoes.Text;
 
-            MessageBox.Show("codigo: " + codigo + "\n" + 
+            MessageBox.Show( 
                 " Nome: " + nome + "\n" +
                 " Endereço: " + endereço + "\n" +
-                " Bairro: " + bairro +
+                " Bairro: " + bairro + "\n" +
                 " CEP: " + CEP + "\n" + 
                 " Telefone: " + telefone + "\n" + 
                 " Cidade: " + cidade + "\n" + 
-                " Estado: " + estado + "\n" + 
+                " Estado: " + estado + "\n" +
+                " Estado Civil: " + estadocivil + "\n" +
                 " Observação: " + observação + "\n" ); 
 
 
-
-        }
-
-        private void cmbCidade_SelectedIndexChanged(object sender, EventArgs e)
-        {
 
         }
     }
