@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace TDE_Alexandre_Formulario
 {
-    public partial class Form1 : Form
+    public partial class Registro : Form
     {
-        public Form1()
+        public Registro()
         {
             InitializeComponent();
         }
@@ -91,6 +91,46 @@ namespace TDE_Alexandre_Formulario
         }
 
         private void mtbNascimento_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
         {
 
         }
