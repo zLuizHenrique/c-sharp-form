@@ -35,15 +35,15 @@ namespace TDE_Alexandre_Formulario
             }
             else
             {
-                if (txtUsuario.Text == "LuizHenrique" && txtSenha.Text == "Luizgato")
+                if (txtUsuario.Text == "luh" && txtSenha.Text == "luh")
                 {
                     this.Hide();
 
-                    Form registro = new Registro();
+                     Principal fp = new Principal();
 
-                    registro.Closed += (s,a) => this.Close();
+                    fp.Closed += (s,a) => this.Close();
 
-                    registro.Show();
+                    fp.Show();
 
                 }
                 else
