@@ -35,11 +35,11 @@ namespace TDE_Alexandre_Formulario
             }
             else
             {
-                if (txtUsuario.Text == "luh" && txtSenha.Text == "luh")
+                if (txtUsuario.Text == "LuizHenrique" && txtSenha.Text == "Luizgato")
                 {
                     this.Hide();
 
-                    Form registro = new Principal();
+                    Form registro = new Registro();
 
                     registro.Closed += (s,a) => this.Close();
 
@@ -52,11 +52,6 @@ namespace TDE_Alexandre_Formulario
                 }
              
             }   
-        }
-
-        private void Login_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }
