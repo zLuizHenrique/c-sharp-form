@@ -24,8 +24,8 @@ namespace TDE_Alexandre_Formulario
 
         private void mmuPessoaFisica_Click(object sender, EventArgs e)
         {
-            Registro registro = new Registro();
-            registro.Show();
+            Registro2 registro = new Registro2();
+            registro.ShowDialog();
         }
 
 

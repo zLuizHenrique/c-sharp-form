@@ -35,7 +35,7 @@ namespace TDE_Alexandre_Formulario
             }
             else
             {
-                if (txtUsuario.Text == "luh" && txtSenha.Text == "luh")
+                if ((txtUsuario.Text == "luh" && txtSenha.Text == "luh") || (txtUsuario.Text == "1" && txtSenha.Text == "1"))
                 {
                     this.Hide();
 

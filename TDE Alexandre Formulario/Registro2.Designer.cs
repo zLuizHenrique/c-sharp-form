@@ -1,6 +1,6 @@
 ﻿namespace TDE_Alexandre_Formulario
 {
-    partial class Registro
+    partial class Registro2
     {
         /// <summary>
         /// Variável de designer necessária.
@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Registro));
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -40,7 +39,6 @@
             this.txtnome = new System.Windows.Forms.TextBox();
             this.txtEndereco = new System.Windows.Forms.TextBox();
             this.txtBairro = new System.Windows.Forms.TextBox();
-            this.txtCEP = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.cmbEstado = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
@@ -48,24 +46,21 @@
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.btnsalvar = new System.Windows.Forms.Button();
             this.btnlimpar = new System.Windows.Forms.Button();
-            this.label7 = new System.Windows.Forms.Label();
-            this.cmbEstadoCivil = new System.Windows.Forms.ComboBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.rdbMasculino = new System.Windows.Forms.RadioButton();
-            this.rdbFeminino = new System.Windows.Forms.RadioButton();
-            this.label11 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.mtbTelefone = new System.Windows.Forms.MaskedTextBox();
+            this.erpRegistro = new System.Windows.Forms.ErrorProvider(this.components);
+            this.txtCEP = new System.Windows.Forms.MaskedTextBox();
+            this.txtTelefone = new System.Windows.Forms.MaskedTextBox();
+            ((System.ComponentModel.ISupportInitialize)(this.erpRegistro)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(59, 42);
+            this.label1.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(12, 36);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(44, 15);
+            this.label1.Size = new System.Drawing.Size(66, 23);
             this.label1.TabIndex = 2;
             this.label1.Text = "Nome:";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -74,10 +69,11 @@
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(37, 84);
+            this.label3.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.Location = new System.Drawing.Point(12, 73);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(63, 15);
+            this.label3.Size = new System.Drawing.Size(100, 23);
             this.label3.TabIndex = 4;
             this.label3.Text = "Endereço:";
             this.label3.Click += new System.EventHandler(this.label3_Click);
@@ -86,10 +82,11 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(59, 125);
+            this.label2.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.Location = new System.Drawing.Point(12, 112);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(43, 15);
+            this.label2.Size = new System.Drawing.Size(69, 23);
             this.label2.TabIndex = 5;
             this.label2.Text = "Bairro:";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -98,10 +95,11 @@
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(66, 178);
+            this.label4.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Black;
+            this.label4.Location = new System.Drawing.Point(12, 142);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(34, 15);
+            this.label4.Size = new System.Drawing.Size(51, 23);
             this.label4.TabIndex = 6;
             this.label4.Text = "CEP:";
             this.label4.Click += new System.EventHandler(this.label4_Click);
@@ -110,10 +108,11 @@
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(52, 209);
+            this.label5.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.Black;
+            this.label5.Location = new System.Drawing.Point(12, 178);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(49, 15);
+            this.label5.Size = new System.Drawing.Size(76, 23);
             this.label5.TabIndex = 7;
             this.label5.Text = "Cidade:";
             this.label5.Click += new System.EventHandler(this.label5_Click);
@@ -122,10 +121,11 @@
             // 
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(286, 215);
+            this.label6.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.Black;
+            this.label6.Location = new System.Drawing.Point(244, 172);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(48, 15);
+            this.label6.Size = new System.Drawing.Size(77, 23);
             this.label6.TabIndex = 8;
             this.label6.Text = "Estado:";
             this.label6.Click += new System.EventHandler(this.label6_Click);
@@ -780,47 +780,41 @@
             "Votorantim",
             "Votuporanga",
             "Zacarias"});
-            this.cmbCidade.Location = new System.Drawing.Point(127, 205);
+            this.cmbCidade.Location = new System.Drawing.Point(107, 170);
             this.cmbCidade.Name = "cmbCidade";
-            this.cmbCidade.Size = new System.Drawing.Size(140, 23);
-            this.cmbCidade.TabIndex = 5;
+            this.cmbCidade.Size = new System.Drawing.Size(121, 21);
+            this.cmbCidade.TabIndex = 10;
             // 
             // txtnome
             // 
-            this.txtnome.Location = new System.Drawing.Point(125, 42);
+            this.txtnome.Location = new System.Drawing.Point(107, 36);
             this.txtnome.Name = "txtnome";
-            this.txtnome.Size = new System.Drawing.Size(384, 21);
-            this.txtnome.TabIndex = 0;
+            this.txtnome.Size = new System.Drawing.Size(347, 20);
+            this.txtnome.TabIndex = 12;
             // 
             // txtEndereco
             // 
-            this.txtEndereco.Location = new System.Drawing.Point(125, 84);
+            this.txtEndereco.Location = new System.Drawing.Point(107, 73);
             this.txtEndereco.Name = "txtEndereco";
-            this.txtEndereco.Size = new System.Drawing.Size(384, 21);
-            this.txtEndereco.TabIndex = 1;
+            this.txtEndereco.Size = new System.Drawing.Size(347, 20);
+            this.txtEndereco.TabIndex = 14;
             // 
             // txtBairro
             // 
-            this.txtBairro.Location = new System.Drawing.Point(125, 125);
+            this.txtBairro.Location = new System.Drawing.Point(107, 105);
             this.txtBairro.Name = "txtBairro";
-            this.txtBairro.Size = new System.Drawing.Size(384, 21);
-            this.txtBairro.TabIndex = 2;
-            // 
-            // txtCEP
-            // 
-            this.txtCEP.Location = new System.Drawing.Point(126, 170);
-            this.txtCEP.Name = "txtCEP";
-            this.txtCEP.Size = new System.Drawing.Size(142, 21);
-            this.txtCEP.TabIndex = 3;
+            this.txtBairro.Size = new System.Drawing.Size(347, 20);
+            this.txtBairro.TabIndex = 15;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(275, 178);
+            this.label8.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.Black;
+            this.label8.Location = new System.Drawing.Point(235, 136);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(58, 15);
+            this.label8.Size = new System.Drawing.Size(92, 23);
             this.label8.TabIndex = 17;
             this.label8.Text = "Telefone:";
             this.label8.Click += new System.EventHandler(this.label8_Click);
@@ -857,29 +851,31 @@
             "São Paulo (SP)",
             "Sergipe (SE)",
             "Tocantins (TO)"});
-            this.cmbEstado.Location = new System.Drawing.Point(349, 205);
+            this.cmbEstado.Location = new System.Drawing.Point(333, 170);
             this.cmbEstado.Name = "cmbEstado";
-            this.cmbEstado.Size = new System.Drawing.Size(140, 23);
-            this.cmbEstado.TabIndex = 6;
+            this.cmbEstado.Size = new System.Drawing.Size(121, 21);
+            this.cmbEstado.TabIndex = 19;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
             this.label9.BackColor = System.Drawing.Color.Transparent;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(19, 352);
+            this.label9.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.Black;
+            this.label9.Location = new System.Drawing.Point(12, 217);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(81, 15);
+            this.label9.Size = new System.Drawing.Size(132, 23);
             this.label9.TabIndex = 20;
             this.label9.Text = "Observações:";
+            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // txtobservacoes
             // 
-            this.txtobservacoes.Location = new System.Drawing.Point(125, 348);
+            this.txtobservacoes.Location = new System.Drawing.Point(150, 221);
             this.txtobservacoes.Multiline = true;
             this.txtobservacoes.Name = "txtobservacoes";
-            this.txtobservacoes.Size = new System.Drawing.Size(384, 131);
-            this.txtobservacoes.TabIndex = 9;
+            this.txtobservacoes.Size = new System.Drawing.Size(330, 114);
+            this.txtobservacoes.TabIndex = 21;
             // 
             // contextMenuStrip1
             // 
@@ -888,137 +884,60 @@
             // 
             // btnsalvar
             // 
-            this.btnsalvar.Location = new System.Drawing.Point(349, 487);
+            this.btnsalvar.Location = new System.Drawing.Point(299, 392);
             this.btnsalvar.Name = "btnsalvar";
-            this.btnsalvar.Size = new System.Drawing.Size(87, 27);
+            this.btnsalvar.Size = new System.Drawing.Size(75, 23);
             this.btnsalvar.TabIndex = 24;
             this.btnsalvar.Text = "Salvar";
             this.btnsalvar.UseVisualStyleBackColor = true;
-            this.btnsalvar.Click += new System.EventHandler(this.btnsalvar_Click);
+            this.btnsalvar.Click += new System.EventHandler(this.btnsalvar_Click_1);
             // 
             // btnlimpar
             // 
-            this.btnlimpar.Location = new System.Drawing.Point(181, 487);
+            this.btnlimpar.Location = new System.Drawing.Point(154, 392);
             this.btnlimpar.Name = "btnlimpar";
-            this.btnlimpar.Size = new System.Drawing.Size(87, 27);
+            this.btnlimpar.Size = new System.Drawing.Size(75, 23);
             this.btnlimpar.TabIndex = 25;
             this.btnlimpar.Text = "Limpar";
             this.btnlimpar.UseCompatibleTextRendering = true;
             this.btnlimpar.UseVisualStyleBackColor = true;
-            this.btnlimpar.Click += new System.EventHandler(this.btnlimpar_Click);
             // 
-            // label7
+            // erpRegistro
             // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(28, 243);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(73, 15);
-            this.label7.TabIndex = 26;
-            this.label7.Text = "Estado Civil:";
-            this.label7.Click += new System.EventHandler(this.label7_Click);
+            this.erpRegistro.ContainerControl = this;
             // 
-            // cmbEstadoCivil
+            // txtCEP
             // 
-            this.cmbEstadoCivil.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbEstadoCivil.FormattingEnabled = true;
-            this.cmbEstadoCivil.Items.AddRange(new object[] {
-            "Casado/a",
-            "Solteiro/a ",
-            "Viuvo/a"});
-            this.cmbEstadoCivil.Location = new System.Drawing.Point(127, 243);
-            this.cmbEstadoCivil.Name = "cmbEstadoCivil";
-            this.cmbEstadoCivil.Size = new System.Drawing.Size(140, 23);
-            this.cmbEstadoCivil.TabIndex = 7;
+            this.txtCEP.Location = new System.Drawing.Point(107, 142);
+            this.txtCEP.Mask = "00000-000";
+            this.txtCEP.Name = "txtCEP";
+            this.txtCEP.Size = new System.Drawing.Size(121, 20);
+            this.txtCEP.TabIndex = 26;
             // 
-            // label10
+            // txtTelefone
             // 
-            this.label10.AutoSize = true;
-            this.label10.BackColor = System.Drawing.Color.Transparent;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(63, 298);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(38, 15);
-            this.label10.TabIndex = 27;
-            this.label10.Text = "Sexo:";
+            this.txtTelefone.Location = new System.Drawing.Point(333, 139);
+            this.txtTelefone.Mask = "(99) 00000-0000";
+            this.txtTelefone.Name = "txtTelefone";
+            this.txtTelefone.Size = new System.Drawing.Size(121, 20);
+            this.txtTelefone.TabIndex = 27;
             // 
-            // rdbMasculino
+            // Registro2
             // 
-            this.rdbMasculino.AutoSize = true;
-            this.rdbMasculino.BackColor = System.Drawing.Color.Transparent;
-            this.rdbMasculino.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdbMasculino.Location = new System.Drawing.Point(127, 298);
-            this.rdbMasculino.Name = "rdbMasculino";
-            this.rdbMasculino.Size = new System.Drawing.Size(82, 19);
-            this.rdbMasculino.TabIndex = 28;
-            this.rdbMasculino.TabStop = true;
-            this.rdbMasculino.Text = "Masculino";
-            this.rdbMasculino.UseVisualStyleBackColor = false;
-            // 
-            // rdbFeminino
-            // 
-            this.rdbFeminino.AutoSize = true;
-            this.rdbFeminino.BackColor = System.Drawing.Color.Transparent;
-            this.rdbFeminino.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdbFeminino.Location = new System.Drawing.Point(219, 298);
-            this.rdbFeminino.Name = "rdbFeminino";
-            this.rdbFeminino.Size = new System.Drawing.Size(77, 19);
-            this.rdbFeminino.TabIndex = 29;
-            this.rdbFeminino.TabStop = true;
-            this.rdbFeminino.Text = "Feminino";
-            this.rdbFeminino.UseVisualStyleBackColor = false;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.BackColor = System.Drawing.Color.Transparent;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(275, 243);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(76, 15);
-            this.label11.TabIndex = 30;
-            this.label11.Text = "Nascimento:";
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(349, 245);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(142, 21);
-            this.dateTimePicker1.TabIndex = 32;
-            this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
-            // 
-            // mtbTelefone
-            // 
-            this.mtbTelefone.Location = new System.Drawing.Point(349, 174);
-            this.mtbTelefone.Mask = "(00) 00000-0000";
-            this.mtbTelefone.Name = "mtbTelefone";
-            this.mtbTelefone.Size = new System.Drawing.Size(140, 21);
-            this.mtbTelefone.TabIndex = 33;
-            // 
-            // Registro
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackColor = System.Drawing.SystemColors.MenuText;
+            this.BackgroundImage = global::TDE_Alexandre_Formulario.Properties.Resources.Login;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(564, 609);
-            this.Controls.Add(this.mtbTelefone);
-            this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.label11);
-            this.Controls.Add(this.rdbFeminino);
-            this.Controls.Add(this.rdbMasculino);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.cmbEstadoCivil);
-            this.Controls.Add(this.label7);
+            this.ClientSize = new System.Drawing.Size(538, 450);
+            this.Controls.Add(this.txtTelefone);
+            this.Controls.Add(this.txtCEP);
             this.Controls.Add(this.btnlimpar);
             this.Controls.Add(this.btnsalvar);
             this.Controls.Add(this.txtobservacoes);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.cmbEstado);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.txtCEP);
             this.Controls.Add(this.txtBairro);
             this.Controls.Add(this.txtEndereco);
             this.Controls.Add(this.txtnome);
@@ -1029,10 +948,11 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
-            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Name = "Registro";
-            this.Text = "Registro";
+            this.Name = "Registro2";
+            this.Text = "Endereço";
+            this.TransparencyKey = System.Drawing.Color.Red;
             this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.erpRegistro)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1049,7 +969,6 @@
         private System.Windows.Forms.TextBox txtnome;
         private System.Windows.Forms.TextBox txtEndereco;
         private System.Windows.Forms.TextBox txtBairro;
-        private System.Windows.Forms.TextBox txtCEP;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.ComboBox cmbEstado;
         private System.Windows.Forms.Label label9;
@@ -1057,14 +976,9 @@
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.Button btnsalvar;
         private System.Windows.Forms.Button btnlimpar;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.ComboBox cmbEstadoCivil;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.RadioButton rdbMasculino;
-        private System.Windows.Forms.RadioButton rdbFeminino;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.MaskedTextBox mtbTelefone;
+        private System.Windows.Forms.ErrorProvider erpRegistro;
+        private System.Windows.Forms.MaskedTextBox txtTelefone;
+        private System.Windows.Forms.MaskedTextBox txtCEP;
     }
 }
 
