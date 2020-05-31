@@ -202,66 +202,169 @@ namespace TDE_Alexandre_Formulario
 
         private void btnsalvar_Click_1(object sender, EventArgs e)
         {
-            if (String.IsNullOrEmpty (txtnome.Text))
-            {
-                erpRegistro.SetError(txtnome, "Campo invalido!");
-            }
-           
-            if (String.IsNullOrEmpty(txtEndereco.Text))
-            {
-                erpRegistro.SetError(txtEndereco, "Campo invalido!");
-            }
-            
-            if (String.IsNullOrEmpty(txtBairro.Text))
-            {
-                erpRegistro.SetError(txtBairro, "Campo invalido!");
-            }
-            
-            if (String.IsNullOrEmpty(txtCEP.Text))
-            {
-                erpRegistro.SetError(txtCEP, "Campo invalido!");
-            }
-            
-            if (String.IsNullOrEmpty(txtTelefone.Text))
-            {
-                erpRegistro.SetError(txtTelefone, "Campo invalido!");
-            }
+            int Banco = 0;
 
-            if (cmbCidade.SelectedIndex > - 1)
+            if (txtnome.Text == "")
             {
-                erpRegistro.SetError(cmbCidade, "Campo invalido!");
-            }
-            
-            if (cmbEstado.SelectedIndex > - 1)
-            {
-                erpRegistro.SetError(cmbEstado, "Campo invalido!");
-            }
+                //Validação Convêncional
+                //MessageBox.Show("Email Obrigatório");
+                erpRegistro.SetError(txtnome, "Nome obrigatório");
 
-            bool checkDirExist = Directory.Exists(path);
-            if (!checkDirExist)
-            {
-                Directory.CreateDirectory(path);
-            }
-
-            bool checkFileExist = File.Exists(file);
-
-            String line = txtnome.Text + "|" + txtEndereco.Text + "|" + txtBairro.Text + "|" + txtCEP.Text + "|" + txtTelefone.Text + "|" + cmbCidade.Text + "|" + cmbEstado.Text + "|";
-
-            if (!checkFileExist)
-            {
-                using (StreamWriter sw = File.CreateText(file))
-                {
-                    sw.WriteLine(line);
-                }
+                Banco = 1;
             }
             else
             {
-                using (StreamWriter sw = File.AppendText(file))
-                {
-                    sw.WriteLine(line);
-                }
+                erpRegistro.SetError(txtnome, "");
+
+                Banco = 0;
+            }
+            if (txtEndereco.Text == "")
+            {
+                erpRegistro.SetError(txtEndereco, "Endereço obrigatório");
+
+                Banco = 1;
+            }
+            else
+            {
+                erpRegistro.SetError(txtEndereco, "");
+
+                Banco = 0;
+
+            }
+            if (txtBairro.Text == "")
+            {
+                erpRegistro.SetError(txtBairro, "Bairro obrigatório");
+
+                Banco = 1;
+            }
+            else
+            {
+                erpRegistro.SetError(txtBairro, "");
+
+                Banco = 0;
+
+            }
+            if (txtCEP.Text == "")
+            {
+                erpRegistro.SetError(txtCEP, "CEP obrigatório");
+
+                Banco = 1;
+            }
+            else
+            {
+                erpRegistro.SetError(txtCEP, "");
+
+                Banco = 0;
+
+            }
+            if (txtTelefone.Text == "")
+            {
+                erpRegistro.SetError(txtTelefone, "Telefone obrigatório");
+
+                Banco = 1;
+            }
+            else
+            {
+                erpRegistro.SetError(txtTelefone, "");
+
+                Banco = 0;
+
+            }
+            if (cmbCidade.Text == "")
+            {
+                erpRegistro.SetError(cmbCidade, "Cidade obrigatório");
+
+                Banco = 1;
+            }
+            else
+            {
+                erpRegistro.SetError(cmbCidade, "");
+
+                Banco = 0;
+
+            }
+            if (cmbEstado.Text == "")
+            {
+                erpRegistro.SetError(cmbEstado, "Estado obrigatório");
+
+                Banco = 1;
+            }
+            else
+            {
+                erpRegistro.SetError(cmbEstado, "");
+
+                Banco = 0;
+
             }
 
+
+            if (Banco == 1)
+            {
+                MessageBox.Show("Preencha os campos obrigatório!");
+            }
+            else
+            {
+
+                //if (String.IsNullOrEmpty (txtnome.Text))
+                //{
+                //    erpRegistro.SetError(txtnome, "Campo invalido!");
+                //}
+
+                //if (String.IsNullOrEmpty(txtEndereco.Text))
+                //{
+                //    erpRegistro.SetError(txtEndereco, "Campo invalido!");
+                //}
+
+                //if (String.IsNullOrEmpty(txtBairro.Text))
+                //{
+                //    erpRegistro.SetError(txtBairro, "Campo invalido!");
+                //}
+
+                //if (String.IsNullOrEmpty(txtCEP.Text))
+                //{
+                //    erpRegistro.SetError(txtCEP, "Campo invalido!");
+                //}
+
+                //if (String.IsNullOrEmpty(txtTelefone.Text))
+                //{
+                //    erpRegistro.SetError(txtTelefone, "Campo invalido!");
+                //}
+
+                //if (cmbCidade.SelectedIndex > - 1)
+                //{
+                //    erpRegistro.SetError(cmbCidade, "Campo invalido!");
+                //}
+
+                //if (cmbEstado.SelectedIndex > - 1)
+                //{
+                //    erpRegistro.SetError(cmbEstado, "Campo invalido!");
+                //}
+
+                bool checkDirExist = Directory.Exists(path);
+                if (!checkDirExist)
+                {
+                    Directory.CreateDirectory(path);
+                }
+
+                bool checkFileExist = File.Exists(file);
+
+                string line = txtnome.Text + "|" + txtEndereco.Text + "|" + txtBairro.Text + "|" + txtCEP.Text + "|" + txtTelefone.Text + "|" + cmbCidade.Text + "|" + cmbEstado.Text + "|";
+
+                if (!checkFileExist)
+                {
+                    using (StreamWriter sw = File.CreateText(file))
+                    {
+                        sw.WriteLine(line);
+                    }
+                }
+                else
+                {
+                    using (StreamWriter sw = File.AppendText(file))
+                    {
+                        sw.WriteLine(line);
+                    }
+                }
+            }
             string nome = txtnome.Text;
             string endereço = txtEndereco.Text;
             string bairro = txtBairro.Text;
@@ -325,6 +428,38 @@ namespace TDE_Alexandre_Formulario
         private void tabPage1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void btnImportar_Click(object sender, EventArgs e)
+        {
+            if (File.Exists(file))
+            {
+                dataGridView1.Rows.Clear();
+                using (StreamReader sr = new StreamReader(file))
+                {
+                    int line = 0;
+                    string In;
+
+                    while ((In = sr.ReadLine()) != null)
+                    {
+                        //Console.WriteLine(In);
+
+                        //MessageBox.Show(In);
+                        string[] fields = In.Split('|');
+
+                        dataGridView1.Rows.Add(fields[0], fields[1], fields[2], fields[3], fields[4], fields[5], fields[6]);
+
+                        line++;
+                    }
+                    sr.Close();
+
+                }
+            }
         }
     }
 }

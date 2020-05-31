@@ -49,7 +49,23 @@
             this.erpRegistro = new System.Windows.Forms.ErrorProvider(this.components);
             this.txtCEP = new System.Windows.Forms.MaskedTextBox();
             this.txtTelefone = new System.Windows.Forms.MaskedTextBox();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.Cadastro = new System.Windows.Forms.TabPage();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.clnNome = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clnEndereço = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clnBairro = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clnCEP = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clnTelefone = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clnCidade = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clnEstado = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnImportar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.erpRegistro)).BeginInit();
+            this.tabControl1.SuspendLayout();
+            this.Cadastro.SuspendLayout();
+            this.tabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -58,7 +74,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(12, 36);
+            this.label1.Location = new System.Drawing.Point(33, 44);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(66, 23);
             this.label1.TabIndex = 2;
@@ -71,7 +87,7 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(12, 73);
+            this.label3.Location = new System.Drawing.Point(33, 81);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(100, 23);
             this.label3.TabIndex = 4;
@@ -84,7 +100,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(12, 112);
+            this.label2.Location = new System.Drawing.Point(33, 109);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(69, 23);
             this.label2.TabIndex = 5;
@@ -97,7 +113,7 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(12, 142);
+            this.label4.Location = new System.Drawing.Point(33, 150);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(51, 23);
             this.label4.TabIndex = 6;
@@ -110,7 +126,7 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(12, 178);
+            this.label5.Location = new System.Drawing.Point(33, 186);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(76, 23);
             this.label5.TabIndex = 7;
@@ -123,7 +139,7 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(244, 172);
+            this.label6.Location = new System.Drawing.Point(265, 180);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(77, 23);
             this.label6.TabIndex = 8;
@@ -780,28 +796,28 @@
             "Votorantim",
             "Votuporanga",
             "Zacarias"});
-            this.cmbCidade.Location = new System.Drawing.Point(107, 170);
+            this.cmbCidade.Location = new System.Drawing.Point(128, 178);
             this.cmbCidade.Name = "cmbCidade";
             this.cmbCidade.Size = new System.Drawing.Size(121, 21);
             this.cmbCidade.TabIndex = 10;
             // 
             // txtnome
             // 
-            this.txtnome.Location = new System.Drawing.Point(107, 36);
+            this.txtnome.Location = new System.Drawing.Point(128, 44);
             this.txtnome.Name = "txtnome";
             this.txtnome.Size = new System.Drawing.Size(347, 20);
             this.txtnome.TabIndex = 12;
             // 
             // txtEndereco
             // 
-            this.txtEndereco.Location = new System.Drawing.Point(107, 73);
+            this.txtEndereco.Location = new System.Drawing.Point(139, 81);
             this.txtEndereco.Name = "txtEndereco";
-            this.txtEndereco.Size = new System.Drawing.Size(347, 20);
+            this.txtEndereco.Size = new System.Drawing.Size(336, 20);
             this.txtEndereco.TabIndex = 14;
             // 
             // txtBairro
             // 
-            this.txtBairro.Location = new System.Drawing.Point(107, 105);
+            this.txtBairro.Location = new System.Drawing.Point(128, 113);
             this.txtBairro.Name = "txtBairro";
             this.txtBairro.Size = new System.Drawing.Size(347, 20);
             this.txtBairro.TabIndex = 15;
@@ -812,7 +828,7 @@
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(235, 136);
+            this.label8.Location = new System.Drawing.Point(256, 144);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(92, 23);
             this.label8.TabIndex = 17;
@@ -851,7 +867,7 @@
             "São Paulo (SP)",
             "Sergipe (SE)",
             "Tocantins (TO)"});
-            this.cmbEstado.Location = new System.Drawing.Point(333, 170);
+            this.cmbEstado.Location = new System.Drawing.Point(354, 178);
             this.cmbEstado.Name = "cmbEstado";
             this.cmbEstado.Size = new System.Drawing.Size(121, 21);
             this.cmbEstado.TabIndex = 19;
@@ -862,7 +878,7 @@
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.Black;
-            this.label9.Location = new System.Drawing.Point(12, 217);
+            this.label9.Location = new System.Drawing.Point(33, 225);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(132, 23);
             this.label9.TabIndex = 20;
@@ -871,7 +887,7 @@
             // 
             // txtobservacoes
             // 
-            this.txtobservacoes.Location = new System.Drawing.Point(150, 221);
+            this.txtobservacoes.Location = new System.Drawing.Point(171, 229);
             this.txtobservacoes.Multiline = true;
             this.txtobservacoes.Name = "txtobservacoes";
             this.txtobservacoes.Size = new System.Drawing.Size(330, 114);
@@ -884,7 +900,7 @@
             // 
             // btnsalvar
             // 
-            this.btnsalvar.Location = new System.Drawing.Point(299, 392);
+            this.btnsalvar.Location = new System.Drawing.Point(320, 400);
             this.btnsalvar.Name = "btnsalvar";
             this.btnsalvar.Size = new System.Drawing.Size(75, 23);
             this.btnsalvar.TabIndex = 24;
@@ -894,7 +910,7 @@
             // 
             // btnlimpar
             // 
-            this.btnlimpar.Location = new System.Drawing.Point(154, 392);
+            this.btnlimpar.Location = new System.Drawing.Point(175, 400);
             this.btnlimpar.Name = "btnlimpar";
             this.btnlimpar.Size = new System.Drawing.Size(75, 23);
             this.btnlimpar.TabIndex = 25;
@@ -908,7 +924,7 @@
             // 
             // txtCEP
             // 
-            this.txtCEP.Location = new System.Drawing.Point(107, 142);
+            this.txtCEP.Location = new System.Drawing.Point(128, 150);
             this.txtCEP.Mask = "00000-000";
             this.txtCEP.Name = "txtCEP";
             this.txtCEP.Size = new System.Drawing.Size(121, 20);
@@ -916,11 +932,125 @@
             // 
             // txtTelefone
             // 
-            this.txtTelefone.Location = new System.Drawing.Point(333, 139);
+            this.txtTelefone.Location = new System.Drawing.Point(354, 147);
             this.txtTelefone.Mask = "(99) 00000-0000";
             this.txtTelefone.Name = "txtTelefone";
             this.txtTelefone.Size = new System.Drawing.Size(121, 20);
             this.txtTelefone.TabIndex = 27;
+            // 
+            // tabControl1
+            // 
+            this.tabControl1.Controls.Add(this.Cadastro);
+            this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Location = new System.Drawing.Point(3, 3);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(566, 473);
+            this.tabControl1.TabIndex = 28;
+            // 
+            // Cadastro
+            // 
+            this.Cadastro.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.Cadastro.BackgroundImage = global::TDE_Alexandre_Formulario.Properties.Resources.Login;
+            this.Cadastro.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Cadastro.Controls.Add(this.txtnome);
+            this.Cadastro.Controls.Add(this.label1);
+            this.Cadastro.Controls.Add(this.txtTelefone);
+            this.Cadastro.Controls.Add(this.label3);
+            this.Cadastro.Controls.Add(this.txtCEP);
+            this.Cadastro.Controls.Add(this.label2);
+            this.Cadastro.Controls.Add(this.btnlimpar);
+            this.Cadastro.Controls.Add(this.label4);
+            this.Cadastro.Controls.Add(this.btnsalvar);
+            this.Cadastro.Controls.Add(this.label5);
+            this.Cadastro.Controls.Add(this.txtobservacoes);
+            this.Cadastro.Controls.Add(this.label6);
+            this.Cadastro.Controls.Add(this.label9);
+            this.Cadastro.Controls.Add(this.cmbCidade);
+            this.Cadastro.Controls.Add(this.cmbEstado);
+            this.Cadastro.Controls.Add(this.txtEndereco);
+            this.Cadastro.Controls.Add(this.label8);
+            this.Cadastro.Controls.Add(this.txtBairro);
+            this.Cadastro.Location = new System.Drawing.Point(4, 22);
+            this.Cadastro.Name = "Cadastro";
+            this.Cadastro.Padding = new System.Windows.Forms.Padding(3);
+            this.Cadastro.Size = new System.Drawing.Size(558, 447);
+            this.Cadastro.TabIndex = 0;
+            this.Cadastro.Text = "Cadastro";
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.Controls.Add(this.btnImportar);
+            this.tabPage2.Controls.Add(this.dataGridView1);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(558, 447);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Listagem";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.clnNome,
+            this.clnEndereço,
+            this.clnBairro,
+            this.clnCEP,
+            this.clnTelefone,
+            this.clnCidade,
+            this.clnEstado});
+            this.dataGridView1.Location = new System.Drawing.Point(11, 11);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(528, 380);
+            this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // clnNome
+            // 
+            this.clnNome.HeaderText = "Nome";
+            this.clnNome.Name = "clnNome";
+            // 
+            // clnEndereço
+            // 
+            this.clnEndereço.HeaderText = "Endereço";
+            this.clnEndereço.Name = "clnEndereço";
+            // 
+            // clnBairro
+            // 
+            this.clnBairro.HeaderText = "Bairro";
+            this.clnBairro.Name = "clnBairro";
+            // 
+            // clnCEP
+            // 
+            this.clnCEP.HeaderText = "CEP";
+            this.clnCEP.Name = "clnCEP";
+            // 
+            // clnTelefone
+            // 
+            this.clnTelefone.HeaderText = "Telefone";
+            this.clnTelefone.Name = "clnTelefone";
+            // 
+            // clnCidade
+            // 
+            this.clnCidade.HeaderText = "Cidade";
+            this.clnCidade.Name = "clnCidade";
+            // 
+            // clnEstado
+            // 
+            this.clnEstado.HeaderText = "Estado";
+            this.clnEstado.Name = "clnEstado";
+            // 
+            // btnImportar
+            // 
+            this.btnImportar.Location = new System.Drawing.Point(446, 409);
+            this.btnImportar.Name = "btnImportar";
+            this.btnImportar.Size = new System.Drawing.Size(75, 23);
+            this.btnImportar.TabIndex = 1;
+            this.btnImportar.Text = "Importar";
+            this.btnImportar.UseVisualStyleBackColor = true;
+            this.btnImportar.Click += new System.EventHandler(this.btnImportar_Click);
             // 
             // Registro2
             // 
@@ -929,32 +1059,19 @@
             this.BackColor = System.Drawing.SystemColors.MenuText;
             this.BackgroundImage = global::TDE_Alexandre_Formulario.Properties.Resources.Login;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(538, 450);
-            this.Controls.Add(this.txtTelefone);
-            this.Controls.Add(this.txtCEP);
-            this.Controls.Add(this.btnlimpar);
-            this.Controls.Add(this.btnsalvar);
-            this.Controls.Add(this.txtobservacoes);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.cmbEstado);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.txtBairro);
-            this.Controls.Add(this.txtEndereco);
-            this.Controls.Add(this.txtnome);
-            this.Controls.Add(this.cmbCidade);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label1);
+            this.ClientSize = new System.Drawing.Size(770, 501);
+            this.Controls.Add(this.tabControl1);
             this.Name = "Registro2";
             this.Text = "Endereço";
             this.TransparencyKey = System.Drawing.Color.Red;
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.erpRegistro)).EndInit();
+            this.tabControl1.ResumeLayout(false);
+            this.Cadastro.ResumeLayout(false);
+            this.Cadastro.PerformLayout();
+            this.tabPage2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -979,6 +1096,18 @@
         private System.Windows.Forms.ErrorProvider erpRegistro;
         private System.Windows.Forms.MaskedTextBox txtTelefone;
         private System.Windows.Forms.MaskedTextBox txtCEP;
+        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabPage Cadastro;
+        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button btnImportar;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clnNome;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clnEndereço;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clnBairro;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clnCEP;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clnTelefone;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clnCidade;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clnEstado;
     }
 }
 
